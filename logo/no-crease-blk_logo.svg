@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="185" height="132" viewBox="0 0 185 132">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="185" height="132" transform="translate(88 134)" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="99.615" height="99.615" stroke="#707070" stroke-width="1.423"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-88 -134)" clip-path="url(#clip-path)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-54.173 79.039)">
+      <g id="Component_4_1" data-name="Component 4 – 1" transform="translate(142.308 71.154)">
+        <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path-2)">
+          <path id="reshot-icon-sneakers-boots-UYJP6CWRLT" d="M83.67,31.049a10.2,10.2,0,0,1-4.528-1.069L46.009,13.412a4.528,4.528,0,0,0-5.221.847,26.556,26.556,0,0,1-14.915,7.734,26.556,26.556,0,0,1-14.915-7.734,4.528,4.528,0,0,0-7.724,3.206V80.856a4.528,4.528,0,0,0,4.53,4.528H98.322a4.528,4.528,0,0,0,4.528-4.528V50.235A19.2,19.2,0,0,0,83.67,31.049ZM12.29,26.666a26.861,26.861,0,0,0,13.583,4.383A32,32,0,0,0,44.714,22.9L75.089,38.086a19.249,19.249,0,0,0,8.581,2.019A10.134,10.134,0,0,1,93.794,50.235v7.988H12.29Zm81.5,49.665H12.29V67.273h81.5Z" transform="translate(-3.235 0.648)"/>
+        </g>
+        <text id="NO_CREASE_BLOG" data-name="NO CREASE BLOG" transform="translate(106.731 31.308)" font-size="34" font-family="BebasNeue-Regular, Bebas Neue"><tspan x="0" y="0">NO</tspan><tspan x="0" y="28">CREASE</tspan><tspan x="0" y="56">BLOG</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
