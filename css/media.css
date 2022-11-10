@@ -1,3 +1,30 @@
+@media (max-width: 1300px) {
+    .main-blog {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        text-align: center;
+    }
+
+    .main-blog_container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .main-blog_container:nth-child(1) {
+        order: 2;
+    }
+
+    .main-blog_content p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .main-blog h1 {
+        margin-top: 0px;
+    }
+    
+}
+
 @media (max-width: 935px) {
     .nav_header {
         justify-content: space-around;
@@ -39,7 +66,5 @@
     .nav-menu li {
         display: none;
     }
-
-
 
 }

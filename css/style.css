@@ -7,6 +7,13 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Arial Black', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
 p {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -20,4 +27,42 @@ li {
 i {
     color: #ffffff;
     font-size: 2.5rem;
+}
+
+a {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* CATEGORY TAGS */
+.category-tag {
+    font-weight: 800;
+    font-size: .5vw;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 5px 30px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+.read-tag {
+    font-weight: 600;
+    /* border: 2px solid #000000; */
+    border-radius: 50px;
+    padding: 10px 25px;
+    background-color: #867FA0;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.read-tag:hover {
+    text-decoration: underline;
+    background-color: #000000;
+    color: #ffffff;
 }
