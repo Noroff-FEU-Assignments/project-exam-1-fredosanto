@@ -107,28 +107,71 @@
 .contact-section {
     height: 250px;
     width: 90%;
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px auto;
+    /* margin-top: 100px; */
     background-color: #4A5C5E;
     color: #ffffff;
     text-align: center;
 }
 
 .contact-section a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ffffff;
     margin-top: 25px;
     display: inline-block;
 }
 
 .contact-section p {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
 /* LATEST BLOGS SECTION */
 .latest-blogs {
     height: 50px;
-    width: 100%;
-    background-color: blue;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    transform: translateX(0%);
+}
+
+.carousel img {
+    width: 25%;
+    padding: 1.25rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.fa-circle-left,
+.fa-circle-right {
+    color: #B7AED9;
+    margin: auto;
+    /* padding: 5px */
+}
+
+.slide-arrow {
+    border-radius: 100%;
+    padding: 0px;
+    margin: 25px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.slide-arrow i {
+    transition: transform 100ms ease-in-out;
+}
+
+.right-arrow:hover > .fa-circle-right,
+.left-arrow:hover > .fa-circle-left {
+    color: #4A5C5E;
+    transform: scale(1.5);
 }
