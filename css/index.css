@@ -35,19 +35,18 @@
 
 /* CONTACT SECTION */
 .contact-section {
-    height: 250px;
     width: 90%;
     margin: 100px auto;
     /* margin-top: 100px; */
     background-color: #4A5C5E;
     color: #ffffff;
     text-align: center;
+    padding: 25px;
 }
 
 .contact-section a {
     font-size: 2.5rem;
     color: #ffffff;
-    margin-top: 25px;
     display: inline-block;
 }
 
@@ -100,7 +99,7 @@
 .carousel-blog-info p {
     margin-top: 0;
     text-align: left;
-    padding: 0px 40px;
+    padding: 0px 20px;
 }
 
 .fa-circle-left,
