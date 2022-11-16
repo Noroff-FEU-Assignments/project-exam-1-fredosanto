@@ -131,11 +131,12 @@
     height: 50px;
     width: 90%;
     margin: 100px auto;
+    margin-bottom: 600px;
     text-align: center;
 }
 
 .carousel_container {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .carousel {
@@ -185,4 +186,27 @@
 .left-arrow:hover > .fa-circle-left {
     color: #4A5C5E;
     transform: scale(1.5);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #000000;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.footer ul {
+    color: #ffffff;
+
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #ffffff;
 }
