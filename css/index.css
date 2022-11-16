@@ -134,6 +134,10 @@
     text-align: center;
 }
 
+.carousel_container {
+    /* overflow: hidden; */
+}
+
 .carousel {
     display: flex;
     --carousel-index: 0;
@@ -141,8 +145,13 @@
     transition: transform 250ms ease-in-out;
 }
 
-.carousel img {
+.carousel-blog {
+    display: flex;
+    flex-direction: column;
     width: 25%;
+}
+
+.carousel-blog img {
     padding: 1.25rem;
     aspect-ratio: 1/1;
     object-fit: cover;

@@ -17,19 +17,6 @@ document.addEventListener("click", carouselEvent => {
     }
 })
 
-// function onSlideClick(carouselClick) {
-//     const carousel = carouselClick.closest(".latest-blogs").querySelector(".carousel")
-//     const carouselIndex = parseInt(getComputedStyle(carousel).getPropertyValue("--carousel-index"))
-    
-//     if (carouselClick.classList.contains("left-arrow")) {
-//         carousel.style.setProperty("--carousel-index", carouselIndex - 1)
-//     }
-
-//     if (carouselClick.classList.contains("right-arrow")) {
-//         carousel.style.setProperty("--carousel-index", carouselIndex + 1)
-//     }
-// }
-
 
 function onSlideClick(carouselClick) {
     const carousel = carouselClick.closest(".latest-blogs").querySelector(".carousel")
