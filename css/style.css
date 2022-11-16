@@ -22,10 +22,15 @@ h2 {
     margin: 25px 0;
 }
 
+h3 {
+    font-family: 'Arial Black', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
 p {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 li {
