@@ -27,6 +27,13 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
 p {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -78,4 +85,42 @@ a {
     text-decoration: underline;
     background-color: #000000;
     color: #ffffff;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+}
+.footer {
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer ul {
+    color: #ffffff;
+    padding: 0px;
+}
+
+.footer ul h3 {
+    margin: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #ffffff;
+}
+
+.logo-footer_container {
+    text-align: center;
+}
+
+.logo_footer {
+    margin: 50px auto;
 }

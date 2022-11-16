@@ -69,7 +69,7 @@
 
 .carousel_container {
     overflow: hidden;
-    background-color: #000000;
+    background-color: #4A5C5E;
 }
 
 .carousel {
@@ -83,8 +83,8 @@
     display: flex;
     flex-direction: column;
     width: 25%;
-    color: #ffffff;
-    background-color: #4A5C5E;
+    /* color: #ffffff; */
+    background-color: #ffffff;
 }
 
 .carousel-blog img {
@@ -129,44 +129,6 @@
 
 .right-arrow:hover > .fa-circle-right,
 .left-arrow:hover > .fa-circle-left {
-    color: #4A5C5E;
+    color: #000000;
     transform: scale(1.5);
-}
-
-
-/* FOOTER */
-footer {
-    background-color: #000000;
-}
-.footer {
-    margin: 100px auto;
-    margin-bottom: 0px;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.footer ul {
-    color: #ffffff;
-    padding: 0px;
-}
-
-.footer ul h3 {
-    margin: 0;
-}
-
-.footer ul li {
-    list-style: none;
-}
-
-.footer ul li a {
-    color: #ffffff;
-}
-
-.logo-footer_container {
-    text-align: center;
-}
-
-.logo_footer {
-    margin: 50px auto;
 }
