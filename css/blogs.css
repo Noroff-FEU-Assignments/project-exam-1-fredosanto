@@ -1,0 +1,24 @@
+.details_container {
+    grid-template-columns: 1;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.details_content {
+    text-align: center;
+}
+
+.details_content img {
+    width: 25%;
+    height: 250px;
+    object-fit: cover;
+} 
+
+.details_content p {
+    text-align: left;
+}
+
+.short-description {
+    color: blue;
+}
