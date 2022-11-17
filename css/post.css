@@ -9,11 +9,15 @@
     text-align: center;
 }
 
-.details_content img {
+.details_image img {
     width: 25%;
     height: 250px;
     object-fit: cover;
-} 
+}
+
+.details_main {
+    color: green;
+}
 
 .details_content p {
     text-align: left;
