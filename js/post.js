@@ -31,28 +31,27 @@ const contentContainer = document.querySelector(".content");
 //                                         <div>${results[0].description}</div>`;
 
 
-//POST.JS
-// const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/59";
+const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/59";
 
-// async function getContent() {
-//     try {
-//         const response = await fetch(url);
-//         const results = await response.json()
+async function getContent() {
+    try {
+        const response = await fetch(url);
+        const results = await response.json()
 
-//         console.log(results)
-
-
-//         contentContainer.innerHTML += `<div class="details_container">
-//                                         <h1 class="details_title">${results.title.rendered}</h1>
-//                                         <div class="details_content">${results.content.rendered}</div>
-//                                         </div>`;
+        console.log(results)
 
 
-//     }
+        contentContainer.innerHTML += `<div class="details_container">
+                                        <h1 class="details_title">${results.title.rendered}</h1>
+                                        <div class="details_content">${results.content.rendered}</div>
+                                        </div>`;
 
-//     catch(error) {
-//         console.log(error);
-//     }
-// };
 
-// getContent() 
+    }
+
+    catch(error) {
+        console.log(error);
+    }
+};
+
+getContent() 
