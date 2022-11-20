@@ -17,8 +17,9 @@ async function getContent() {
             
             contentContainer.innerHTML += `<div class="carousel-post">
                                                 <img src="${results[i].images[0].src}" alt="" />
+                                                <a href="#" class="category-tag carousel-tag">${results[i].categories[0].name}</a>
                                                 <div class="carousel-post-info">
-                                                    <h3>${results[i].name}</h3
+                                                    <h3>${results[i].name}</h3>
                                                     <p>${results[i].short_description}</p>
                                                 </div>
                                             </div>`;

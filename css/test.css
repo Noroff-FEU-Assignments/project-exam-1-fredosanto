@@ -83,7 +83,7 @@
     flex-direction: column;
     width: 25%;
     /* color: #ffffff; */
-    background-color: #ffffff;
+    background-color: #ffffff;  
 }
 
 .carousel-post img {
@@ -92,11 +92,23 @@
     object-fit: cover;
 }
 
+.carousel-tag {
+    width: 100px;
+    margin: 0px 0px 20px 20px;
+}
+
+/* .carousel-post-info {
+    flex-grow: 0;
+} */
+
 .carousel-post-info h3 {
     margin: 0;
     margin-bottom: 10px;
     padding: 0 20px;
     text-align: left;
+    max-height: 55px;
+    overflow: hidden;
+    /* font-size: 1vw; */
 }
 
 .carousel-post-info p {
