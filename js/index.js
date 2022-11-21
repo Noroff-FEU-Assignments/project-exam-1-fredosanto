@@ -10,13 +10,15 @@ async function getContent() {
         // console.log(results[0])
 
         for (let i = 0; i < results.length; i++) {
-            console.log(results[i])
+            // console.log(results[i])
             
             contentContainer.innerHTML += `<div class="carousel-post">
                                                 <img src="${results[i].images[0].src}" alt="" />
-                                                <a href="#" class="category-tag carousel-tag">${results[i].categories[0].name}</a>
                                                 <div class="carousel-post-info">
+                                                    <a href="/post.html?id=${results[i].id}">
                                                     <h3>${results[i].name}</h3>
+                                                    </a>
+                                                    <a href="#" class="category-tag carousel-tag">${results[i].categories[0].name}</a>
                                                     <p>${results[i].short_description}</p>
                                                 </div>
                                             </div>`;

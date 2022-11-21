@@ -27,10 +27,15 @@
     object-fit: cover;
 }
 
-.category-tag {
+/* .category {
     margin: 25px 0;
     margin-top: 0px;
 }
+
+.category-tag {
+    margin: 25px 0;
+    margin-top: 0px;
+} */
 
 
 /* CONTACT SECTION */
@@ -94,27 +99,37 @@
 
 .carousel-tag {
     width: 100px;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 10px 20px;
+}
+
+.carousel-tag:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* .carousel-post-info {
     flex-grow: 0;
 } */
+.carousel-post-info {
+    text-align: left;
+}
 
 .carousel-post-info h3 {
     margin: 0;
     margin-bottom: 10px;
     padding: 0 20px;
-    text-align: left;
     max-height: 55px;
     overflow: hidden;
     /* font-size: 1vw; */
 }
 
+.carousel-post-info a h3:hover {
+    text-decoration: underline;
+}
+
 .carousel-post-info p {
-    margin-top: 0;
-    text-align: left;
-    padding: 0px 20px;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 .fa-circle-left,
