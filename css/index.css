@@ -1,5 +1,5 @@
 /* MAIN CONTENT */
-.main-blog {
+.main-post {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* margin: 100px; */
@@ -9,19 +9,19 @@
     gap: 50px;
 }
 
-.main-blog h1 {
+.main-post h1 {
     font-size: 3vw;
     margin-bottom: 10px;
 }
 
-.main-blog_content p {
+.main-post_content p {
     line-height: 2rem;
     width: 80%;
     margin: 25px 0;
     margin-top: 5px;
 }
 
-.main-blog img {
+.main-post img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,11 +58,11 @@
 
 
 /* LATEST BLOGS SECTION */
-.latest-blogs {
+.latest-posts {
     height: 50px;
     width: 90%;
     margin: 100px auto;
-    margin-bottom: 800px;
+    margin-bottom: 900px;
     text-align: center;
 }
 
@@ -78,25 +78,40 @@
     transition: transform 250ms ease-in-out;
 }
 
-.carousel-blog {
+.carousel-post {
     display: flex;
     flex-direction: column;
     width: 25%;
     /* color: #ffffff; */
-    background-color: #ffffff;
+    background-color: #ffffff;  
 }
 
-.carousel-blog img {
+.carousel-post img {
     padding: 1.25rem;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.carousel-blog-info h3 {
-    margin: 0;
+.carousel-tag {
+    width: 100px;
+    margin: 0px 0px 20px 20px;
 }
 
-.carousel-blog-info p {
+/* .carousel-post-info {
+    flex-grow: 0;
+} */
+
+.carousel-post-info h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    text-align: left;
+    max-height: 55px;
+    overflow: hidden;
+    /* font-size: 1vw; */
+}
+
+.carousel-post-info p {
     margin-top: 0;
     text-align: left;
     padding: 0px 20px;
@@ -131,3 +146,25 @@
     color: #000000;
     transform: scale(1.5);
 }
+
+
+/* WP CONTENT */
+.details_image img {
+    display: none;
+}
+
+.details_main {
+    display: none;
+}
+
+.details_content p {
+    display: none;
+}
+
+.short-description {
+    display: none;
+}
+
+/* IMAGE HIEARCHY */
+/* post_image featured_image
+post_image details_image  */

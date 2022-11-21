@@ -63,7 +63,8 @@ function onSlideClick(carouselClick) {
     }
 
     if (carouselClick.classList.contains("right-arrow")) {
-        if(carouselIndex + 1 <= 2)
-        carousel.style.setProperty("--carousel-index", carouselIndex + 1)
+        if(carouselIndex + 1 <= 2) {
+            carousel.style.setProperty("--carousel-index", carouselIndex + 1)
+        }
     }
 }

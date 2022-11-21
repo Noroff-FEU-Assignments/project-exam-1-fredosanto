@@ -1,3 +1,5 @@
+// NAVBAR
+
 const hamburgerToggle = document.querySelector(".fa-bars");
 const hamburgerMenu = document.querySelector(".nav-menu");
 
