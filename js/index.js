@@ -1,6 +1,7 @@
 const contentContainer = document.querySelector(".carousel");
 
-const url = "https://fredo.one/nocreaseblog/wp-json/wc/store/v1/products?per_page=12";
+// const url = "https://fredo.one/nocreaseblog/wp-json/wc/store/v1/products?per_page=12";
+const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?per_page=100&_embed";
 
 async function getContent() {
     try {
@@ -11,15 +12,15 @@ async function getContent() {
 
         for (let i = 0; i < results.length; i++) {
             // console.log(results[i])
-            
+
             contentContainer.innerHTML += `<div class="carousel-post">
-                                                <img src="${results[i].images[0].src}" alt="" />
+                                                <img src="${results[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
                                                 <div class="carousel-post-info">
                                                     <a href="/post.html?id=${results[i].id}">
-                                                    <h3>${results[i].name}</h3>
+                                                    <h3>${results[i].title.rendered}</h3>
                                                     </a>
-                                                    <a href="#" class="category-tag carousel-tag">${results[i].categories[0].name}</a>
-                                                    <p>${results[i].short_description}</p>
+                                                    <div class="category-tag carousel-tag">${results[i]._embedded["wp:term"][0][0].name}</div>
+                                                    <p>${results[i].excerpt.rendered}</p>
                                                 </div>
                                             </div>`;
 

@@ -1,0 +1,32 @@
+.posts_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* .post_container {
+    height: 100px;
+} */
+
+.post_container {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+/* .post-image_container {
+    
+} */
+
+.post_container img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* .post-info {
+    
+} */
+
+.post-info h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}

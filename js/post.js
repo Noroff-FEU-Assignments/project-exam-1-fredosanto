@@ -1,51 +1,26 @@
 const contentContainer = document.querySelector(".content");
 
-// const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts";
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
 
-// async function getContent() {
-//     try {
-//         const response = await fetch(url);
-//         const results = await response.json()
+// console.log(id);
 
-//         // console.log(results[0])
+// const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id;
+const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id;
 
-//         for (let i = 0; i < results.length; i++) {
-//             console.log(results[i])
-
-//             contentContainer.innerHTML += `<div>${results[0].content.rendered}"</div>`;
-
-//         }
-
-
-//     }
-
-//     catch(error) {
-//         console.log(error);
-//     }
-// };
-
-// getContent()    
-
-
-// contentContainer.innerHTML += `<div><img class="image" src="${results[0].images[0].src}"</div>
-//                                         <div>${results[0].description}</div>`;
-
-
-const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/59";
-
-async function getContent() {
+async function getPost() {
     try {
         const response = await fetch(url);
-        const results = await response.json()
+        const result = await response.json()
 
-        console.log(results)
+        console.log(result)
 
-
+        document.title = `Post | ${result.title.rendered}`;
         contentContainer.innerHTML += `<div class="details_container">
-                                        <h1 class="details_title">${results.title.rendered}</h1>
-                                        <div class="details_content">${results.content.rendered}</div>
+                                        <h1 class="details_title">${result.title.rendered}</h1>
+                                        <div class="details_content">${result.content.rendered}</div>
                                         </div>`;
-
 
     }
 
@@ -54,4 +29,13 @@ async function getContent() {
     }
 };
 
-getContent() 
+getPost();
+
+
+
+// function addHtml(result) {
+//     contentContainer.innerHTML += `<div class="details_container">
+//                                         <h1 class="details_title">${results.title.rendered}</h1>
+//                                         <div class="details_content">${results.content.rendered}</div>
+//                                         </div>`;
+// }
