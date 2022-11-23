@@ -1,20 +1,21 @@
 .posts_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
-
-/* .post_container {
-    height: 100px;
-} */
 
 .post_container {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px;
 }
 
-/* .post-image_container {
-    
-} */
+.post-image_container {
+    width: 100%;
+}
 
 .post_container img {
     width: 100%;
@@ -23,10 +24,19 @@
 }
 
 /* .post-info {
-    
+    height: 100%;
 } */
 
 .post-info h2 {
     font-size: 1.5rem;
     margin: 0;
+}
+
+
+/* SHOW MORE BTN */
+.show-more {
+    margin: auto;
+    text-align: center;
+    display: block;
+    padding: 15px 50px;
 }
