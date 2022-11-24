@@ -3,13 +3,13 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 90%;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     margin: auto;
 }
 
 .post_container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     margin: 50px;
 }
 

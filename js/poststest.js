@@ -4,6 +4,7 @@ const showMoreBtn = document.querySelector(".show-more")
 const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?per_page=100&_embed";
 
 async function getContent() {
+    
     try {
         const response = await fetch(url);
         const results = await response.json()
@@ -11,9 +12,6 @@ async function getContent() {
         const limit = 3
         let startindex = 0
         let endindex = limit
-
-        console.log(results)
-        // let postIndex = 2;
         
         const addArticle = (article) => {
             return`<div class="post_container">
@@ -38,7 +36,7 @@ async function getContent() {
             startindex = startindex + limit
             endindex = endindex + limit
             const articlesToAdd = results.slice(startindex, endindex)
-
+            // add setTimeoute and add spinner here
             articlesToAdd.forEach((article) => {
                 postsContainer.innerHTML += addArticle(article);
             })      
