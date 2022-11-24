@@ -6,7 +6,7 @@ const postsUrl = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?_embed";
 async function getMainPost() {
     try {
         const response = await fetch(postsUrl);
-        const mainPost = await response.json()
+        const mainPost = await response.json();
 
         console.log(mainPost[0])
 

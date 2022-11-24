@@ -41,14 +41,14 @@ async function getContent() {
                                                 }
                                                 
         showMoreBtn.onclick = function() {
-            for (let i = 3; i < 6; i++) {
+            for (let i = 3; i < results.length; i++) {
                 // console.log(results[i])
                 postsContainer.innerHTML += `<div class="post_container">
                                                 <div class"post-image_container">
                                                     <img src="${results[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
                                                 </div>
                                                 <div class="post-info">
-                                                    <a href="/post.html?id=${results[i].id}">
+                                                    <a href="/article.html?id=${results[i].id}">
                                                     <h2>${results[i].title.rendered}</h2>
                                                     </a>
                                                     <div class="category-tag carousel-tag">${results[i]._embedded["wp:term"][0][0].name}</div>

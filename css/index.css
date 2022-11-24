@@ -69,11 +69,12 @@
     margin: 100px auto;
     margin-bottom: 900px;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .carousel_container {
     overflow: hidden;
-    background-color: #4A5C5E;
+    /* background-color: #4A5C5E; */
 }
 
 .carousel {

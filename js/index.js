@@ -16,7 +16,7 @@ async function getContent() {
             contentContainer.innerHTML += `<div class="carousel-post">
                                                 <img src="${results[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
                                                 <div class="carousel-post-info">
-                                                    <a href="/post.html?id=${results[i].id}">
+                                                    <a href="/article.html?id=${results[i].id}">
                                                     <h3>${results[i].title.rendered}</h3>
                                                     </a>
                                                     <div class="category-tag carousel-tag">${results[i]._embedded["wp:term"][0][0].name}</div>
@@ -64,6 +64,9 @@ function onSlideClick(carouselClick) {
 
     if (carouselClick.classList.contains("right-arrow")) {
         if(carouselIndex + 1 <= 2) {
+            carousel.style.setProperty("--carousel-index", carouselIndex + 1)
+        }
+        if(carouselIndex + 1 <= 3) {
             carousel.style.setProperty("--carousel-index", carouselIndex + 1)
         }
     }
