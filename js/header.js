@@ -27,7 +27,7 @@ async function getMainPost() {
                                     <a href="" class="category-tag">${mainPost[0]._embedded["wp:term"][0][0].name}</a>
                                     <p>${mainPost[0].excerpt.rendered
                                     }</p>
-                                    <a href="#" class="read-tag">Read more</a>
+                                    <a href="/article.html?id=${mainPost[0].id}" class="read-tag">Read more</a>
                                 </div>
                                 <div class="main-post_container main-post_image">
                                     <img src="${mainPost[0]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt=""/>

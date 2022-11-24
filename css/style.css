@@ -58,6 +58,27 @@ a {
 
 
 /* CATEGORY TAGS */
+.click-here_btn {
+    background-color: #ffffff;
+    border: 5px solid #867FA0;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: inline-block;
+    margin: 10px;
+    
+}
+.click-here_btn a{
+    color: #000000;
+}
+.click-here_btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .category-tag {
     font-weight: 800;
     font-size: .5vw;

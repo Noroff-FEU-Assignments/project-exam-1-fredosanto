@@ -41,6 +41,7 @@
 /* CONTACT SECTION */
 .contact-section {
     width: 90%;
+    /* height: 30vh; */
     margin: 100px auto;
     /* margin-top: 100px; */
     background-color: #4A5C5E;
@@ -49,15 +50,23 @@
     padding: 25px;
 }
 
-.contact-section a {
-    font-size: 2.5rem;
+.contact-section h2 {
+    margin: 10px;
+}
+
+.contact-section h2 a {
+    font-size: 4vh;
     color: #ffffff;
     display: inline-block;
 }
 
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
 .contact-section p {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 2vh;
+    line-height: 4vh;
     margin: 0;
 }
 

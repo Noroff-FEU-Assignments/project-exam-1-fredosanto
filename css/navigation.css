@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.nav-logo_container {
+    cursor: pointer;
+}
+
 .hamburger_icon {
     display: none;
 }
