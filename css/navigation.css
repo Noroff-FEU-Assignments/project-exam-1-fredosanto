@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.search-field.search {
+.search-field.active {
     background-color: #4A5C5E;
     height: 90px;
     width: 100%;
@@ -60,7 +60,7 @@
     animation: slide 0.5s
 }
 
-.search-field.search input {
+.search-field.active input {
     display: block;
     margin: 20px auto;
     width: 35%;
