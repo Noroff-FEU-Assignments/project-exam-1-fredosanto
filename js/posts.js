@@ -9,13 +9,13 @@ async function getContent() {
         const response = await fetch(url);
         const results = await response.json()
 
-        const limit = 3
+        const limit = 4
         let startindex = 0
         let endindex = limit
         
         const addArticle = (article) => {
             return`<div class="post_container">
-                    <div class"post-image_container">
+                    <div class="post-image_container">
                         <img src="${article._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
                     </div>
                     <div class="post-info">

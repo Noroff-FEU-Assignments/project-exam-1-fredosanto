@@ -1,6 +1,11 @@
+h1 {
+    /* margin: auto; */
+    text-align: center;
+}
+
 .posts_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 90%;
     text-align: center;
     /* align-items: center; */
@@ -9,12 +14,15 @@
 
 .post_container {
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    margin: 50px;
+    /* grid-template-rows: 1fr 2fr; */
+    grid-template-rows: auto 1fr;
+    margin: 10px;
+    gap: 10px;
 }
 
 .post-image_container {
-    width: 100%;
+    /* width: 100%; */
+    min-height: 300px;
 }
 
 .post_container img {
@@ -23,20 +31,41 @@
     object-fit: cover;
 }
 
-/* .post-info {
-    height: 100%;
-} */
+.post-info {
+    /* height: 100%; */
+    /* background-color: yellow; */
+    /* max-height: 400px; */
+    /* max-height: 100px; */
+}
 
 .post-info h2 {
     font-size: 1.5rem;
-    margin: 0;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+.post-info p {
+    font-size: 1rem;
 }
 
 
 /* SHOW MORE BTN */
 .show-more {
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
     display: block;
     padding: 15px 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 5px solid #867FA0;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+.show-more:hover {
+    background-color: #867FA0;
+    border: 5px solid #000000;
 }
