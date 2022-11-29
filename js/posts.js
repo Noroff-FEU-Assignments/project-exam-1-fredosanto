@@ -9,7 +9,7 @@ async function getContent() {
         const response = await fetch(url);
         const results = await response.json()
 
-        const limit = 4
+        const limit = 10
         let startindex = 0
         let endindex = limit
         

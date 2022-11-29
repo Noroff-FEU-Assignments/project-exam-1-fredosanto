@@ -1,6 +1,6 @@
 const headerPost = document.querySelector(".main-post");
 
-// const postsUrl = "https://fredo.one/nocreaseblog/wp-json/wc/store/v1/products";
+
 const postsUrl = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?_embed";
 
 async function getMainPost() {

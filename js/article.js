@@ -4,9 +4,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// console.log(id);
-
-// const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id;
 const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id;
 
 async function getPost() {
@@ -31,11 +28,3 @@ async function getPost() {
 
 getPost();
 
-
-
-// function addHtml(result) {
-//     contentContainer.innerHTML += `<div class="details_container">
-//                                         <h1 class="details_title">${results.title.rendered}</h1>
-//                                         <div class="details_content">${results.content.rendered}</div>
-//                                         </div>`;
-// }
