@@ -1,0 +1,48 @@
+.contact {
+    text-align: center;
+}
+
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+
+.form_container,
+.form-image_container {
+    width: 100%;
+    max-height: 600px;
+    text-align: center;
+}
+
+/* .form-image_container,
+.form_container {
+    width: 100%;
+    height: 100%;
+} */
+
+.form-image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-form_input {
+    margin: 20px auto;
+}
+
+.contact-form_input label,
+.contact-form_input input,
+.contact-form_input textarea {
+    display: block;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+
+
+.error {
+    display: none;
+}
