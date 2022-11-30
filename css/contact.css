@@ -64,7 +64,10 @@
 
 
 
-.sucess {
+#success-message {
+    display: none;
+}
+#error-message {
     display: none;
 }
 .error {
