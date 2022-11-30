@@ -15,3 +15,12 @@ const subjectError = document.querySelector(".error-subject");
 
 const message = document.getElementById("message");
 const messageError = document.querySelector(".error-message");
+
+
+function submitForm() {
+    event.preventDefault();
+
+    console.log(event);
+}
+
+contactForm.addEventListener('submit', submitForm)();
