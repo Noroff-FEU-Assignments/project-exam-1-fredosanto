@@ -68,6 +68,12 @@
     .about_content {
         width: 70%;
     }
+
+    /* CONTACT */
+    .contact_container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
     
 }
 
@@ -203,4 +209,13 @@
         height: 100vh;
         object-fit: contain;
     } */
+
+    /* CONTACT */
+    .contact_container {
+        width: 100%;
+    }
+
+    .form-image_container {
+        margin-bottom: 30px;
+    }
 }

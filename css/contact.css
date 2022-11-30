@@ -12,15 +12,9 @@
 .form_container,
 .form-image_container {
     width: 100%;
-    max-height: 600px;
+    max-height: 800px;
     text-align: center;
 }
-
-/* .form-image_container,
-.form_container {
-    width: 100%;
-    height: 100%;
-} */
 
 .form-image_container img {
     width: 100%;
@@ -29,7 +23,7 @@
 }
 
 .contact-form_input {
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .contact-form_input label,
@@ -41,8 +35,38 @@
     margin: auto;
 }
 
+.contact-form_input input,
+.contact-form_input textarea {
+    border: 1px solid #000000;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.btn {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 5px solid #867FA0;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #867FA0;
+    border: 5px solid #000000;
+}
 
 
+
+.sucess {
+    display: none;
+}
 .error {
     display: none;
 }
