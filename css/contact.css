@@ -12,7 +12,7 @@
 .form_container,
 .form-image_container {
     width: 100%;
-    max-height: 800px;
+    max-height: 900px;
     text-align: center;
 }
 
@@ -62,14 +62,39 @@
     border: 5px solid #000000;
 }
 
+/* FORM MESSAGES */
+#success-message,
+#error-message {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 5px solid #4A5C5E;
 
-
-#success-message {
-    display: none;
 }
+#success-message {
+    background-color: lightgreen;
+}
+#error-message {
+    background-color: indianred;
+}
+.error {
+    color: red;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+.error p {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+/* #success-message {
+    display: none;
+} */
 #error-message {
     display: none;
 }
-.error {
+/* .error {
     display: none;
-}
+} */

@@ -1,3 +1,5 @@
+import { inputLengthValidation, emailValidate, messageLengthValidation } from "./utils/validation.js";
+
 const contactForm = document.getElementById("contact-form");
 const formError = document.getElementById("error-message");
 const formSuccess = document.getElementById("success-message");
@@ -8,7 +10,6 @@ const nameError = document.querySelector(".error-name");
 
 const email = document.getElementById("email");
 const emailError = document.querySelector("error-email");
-// const emailRegEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
 
 const subject = document.getElementById("subject");
 const subjectError = document.querySelector(".error-subject");
@@ -17,10 +18,18 @@ const message = document.getElementById("message");
 const messageError = document.querySelector(".error-message");
 
 
-function submitForm() {
-    event.preventDefault();
+// function submitForm() {
+//     event.preventDefault();
 
-    console.log(event);
-}
+//     if (inputLengthValidation(name.value, 1) === true) {
+//         nameError.style.display = 'none';
+//     } else {
+//         nameError.style.display = 'block';
+//     }
 
-contactForm.addEventListener('submit', submitForm)();
+//     console.log(event);
+// }
+
+// contactForm.addEventListener('submit', submitForm);
+
+
