@@ -18,18 +18,18 @@ const message = document.getElementById("message");
 const messageError = document.querySelector(".error-message");
 
 
-// function submitForm() {
-//     event.preventDefault();
+function submitForm() {
+    event.preventDefault();
 
-//     if (inputLengthValidation(name.value, 1) === true) {
-//         nameError.style.display = 'none';
-//     } else {
-//         nameError.style.display = 'block';
-//     }
+    if (inputLengthValidation(name.value, 1) === true) {
+        nameError.style.display = 'none';
+    } else {
+        nameError.style.display = 'block';
+    }
 
-//     console.log(event);
-// }
+    console.log(event);
+}
 
-// contactForm.addEventListener('submit', submitForm);
+contactForm.addEventListener('submit', submitForm);
 
 
