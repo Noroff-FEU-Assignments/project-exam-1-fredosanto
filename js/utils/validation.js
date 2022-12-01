@@ -1,5 +1,5 @@
-function inputLengthValidation (value, requiredLength) {
-    if (value.trim() > requiredLength) {
+function inputLengthValidation(value, requiredLength) {
+    if (value.trim().length > requiredLength) {
         return true;
     } else {
         return false
@@ -7,15 +7,15 @@ function inputLengthValidation (value, requiredLength) {
 }
 
 
-function emailValidate (email) {
-    const emailRegEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+function emailValidate(email) {
+    const emailRegEx = /\S+@\S+\.\S+/;;
     const emailFormat = emailRegEx.test(email);
     return emailFormat;
 }
 
 
-function messageLengthValidation (value, requiredLength) {
-    if ((value.trim().length < requiredLength) && (value.trim().length > 24)) {
+function messageLengthValidation(value, requiredLength) {
+    if ((value.trim().length < requiredLength) && (value.trim().length) > 24) {
         return true;
     } else {
         return false;
