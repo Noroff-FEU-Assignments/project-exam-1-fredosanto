@@ -45,8 +45,17 @@ function submitForm() {
         messageError.style.display = 'block';
     }
 
-    console.log(event);
-    console.log(email.value);
+    if ((inputLengthValidation(name.value, 1)) &&
+        (emailValidate(email.value)) &&
+        (inputLengthValidation(subject.value, 3)) &&
+        (messageLengthValidation(message.value, 101))) {
+            formSuccess.style.display = 'block';
+            formError.style.display = 'none';
+        } else {
+            formError.style.display = 'block';
+            formSuccess.style.display = 'none';
+        }
+
 }
 
 contactForm.addEventListener('submit', submitForm);

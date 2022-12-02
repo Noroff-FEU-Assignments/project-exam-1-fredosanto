@@ -5,13 +5,72 @@
 
 .details_container h1 {
     margin: 50px auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 3vw;
     width: 50%;
 }
 
 /* LIGHTBOX */
+.lightbox-image {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    transition: transform .5s;
+}
+.lightbox-image:hover {
+    transform: scale(1.2);
+}
+
+.lightbox-image img {
+    width: 100%;
+}
+
+.lightbox_container {
+    display: none;
+}
+
+.lightbox_container:target {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.893);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lightbox_container figure {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.lightbox_container img {
+    width: 70%;
+    height: 70%;
+    margin: 10px auto;
+    position: relative;
+    object-fit: contain;
+}
+
+.lightbox_container a {
+    color: #ffffff;
+}
+
+.lightbox-close {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
 
 /* TEXT CONTENT */
