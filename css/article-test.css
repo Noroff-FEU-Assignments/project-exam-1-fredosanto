@@ -17,6 +17,7 @@
     max-width: 300px;
     margin: auto;
     padding: 10px;
+    cursor: zoom-in;
     transition: transform .5s;
 }
 .lightbox-image:hover {
@@ -96,9 +97,9 @@
     display: none;
 }
 
-.details_main {
+/* .details_main {
 
-}
+} */
 
 .details_content p {
     text-align: left;
