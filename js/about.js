@@ -10,8 +10,6 @@ async function getAboutContent() {
         const response = await fetch(aboutUrl);
         const about = await response.json();
 
-        console.log(about);
-
         aboutContainer.innerHTML = `<div about_container>
                                     ${about.content.rendered}
                                     </div>`;

@@ -46,15 +46,15 @@ h1 {
 
 /* Loading */
 .spinner {
+    width: 100px;
+    height: 100px;
+    margin: auto;
     border: 30px solid #000000; 
     border-top: 30px solid #867FA0; 
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: spin 1s linear infinite;
-    margin: auto;
+    animation: load 1s linear infinite;
 }
-@keyframes spin {
+@keyframes load {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }

@@ -35,11 +35,11 @@ function init() {
     const arrowLeft = document.querySelector(".left-arrow")
     const arrowRight = document.querySelector(".right-arrow")
     const contentContainer = document.querySelector(".carousel");
-    console.log(arrowRight)
+    // console.log(arrowRight)
     function handleNavigation(interaction) {
         const {clientWidth, scrollLeft} = contentContainer;
-        console.log(clientWidth)
-        console.log('contentContainer', contentContainer)
+        // console.log(clientWidth)
+        // console.log('contentContainer', contentContainer)
         let scrollX 
             if(interaction === 'left') {
                 scrollX = scrollLeft - clientWidth;
@@ -47,7 +47,7 @@ function init() {
             if(interaction === 'right') {
                 scrollX = scrollLeft + clientWidth;
             }
-            console.log(scrollX)
+            // console.log(scrollX)
             contentContainer.scroll({top:0, left:scrollX, behavior:"smooth"})
     }
 

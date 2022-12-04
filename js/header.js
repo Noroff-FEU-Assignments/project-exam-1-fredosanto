@@ -8,7 +8,7 @@ async function getMainPost() {
         const response = await fetch(postsUrl);
         const mainPost = await response.json();
 
-        console.log(mainPost[0])
+        // console.log(mainPost[0])
         
 
         headerPost.innerHTML = `<div class="main-post_container main-post_content">
