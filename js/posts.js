@@ -23,7 +23,7 @@ async function getContent() {
         const addArticle = (article) => {
             return`<div class="post_container">
                     <div class="post-image_container">
-                        <img src="${article._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
+                        <img src="${article._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${article._embedded["wp:featuredmedia"][0].alt_text}" />
                     </div>
                     <div class="post-info">
                         <a href="/article.html?id=${article.id}">

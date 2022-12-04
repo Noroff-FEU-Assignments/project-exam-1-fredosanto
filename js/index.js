@@ -11,7 +11,7 @@ async function getContent() {
 
         results.forEach((article) => {
             contentContainer.innerHTML += `<div class="carousel-post">
-                                                <img src="${article._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="" />
+                                                <img src="${article._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${article._embedded["wp:featuredmedia"][0].alt_text}" />
                                                 <div class="carousel-post-info">
                                                     <a href="/article.html?id=${article.id}">
                                                     <h3>${article.title.rendered}</h3>
