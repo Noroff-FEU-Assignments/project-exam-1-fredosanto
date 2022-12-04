@@ -63,12 +63,54 @@
 .search-field.active input {
     display: block;
     margin: 20px auto;
-    width: 35%;
+    width: 50%;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     outline: none;
     transition: all 0.5s ease-in-out;
     animation: slide 0.5s;
+}
+
+.search-results {
+    display: none;
+}
+
+.search-field.active .search-results {
+    display: block;
+}
+
+.results_container {
+    background-color: black;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+}
+
+.result {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-height: 300px;
+    background-color: #4A5C5E;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.result h4 {
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.result img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 10px;
 }
 
 @keyframes slide {

@@ -181,6 +181,10 @@
 }
 
 @media (max-width: 600px) {
+    /* NAV */
+    .search-field.active input {
+        width: 90%;
+    }
     /* INDEX LATEST BLOGS */
     .latest-posts {
         /* margin-bottom: 800px; */
