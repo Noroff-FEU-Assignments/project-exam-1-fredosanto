@@ -1,6 +1,5 @@
 const contentContainer = document.querySelector(".carousel");
 
-// const url = "https://fredo.one/nocreaseblog/wp-json/wc/store/v1/products?per_page=12";
 const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?per_page=100&_embed";
 
 async function getContent() {
@@ -41,8 +40,6 @@ function init() {
         const {clientWidth, scrollLeft} = contentContainer;
         console.log(clientWidth)
         console.log('contentContainer', contentContainer)
-        // const carouselWidth = contentContainer.clientWidth;
-        // const scrollLeft = contentContainer.scrollLeft;
         let scrollX 
             if(interaction === 'left') {
                 scrollX = scrollLeft - clientWidth;
