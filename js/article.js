@@ -6,7 +6,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id;
 const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts/" + id + "?_embed";
 
 async function getPost() {
@@ -14,7 +13,7 @@ async function getPost() {
         const response = await fetch(url);
         const result = await response.json()
 
-        console.log(result)
+        // console.log(result)
 
         document.title = `No Crease Blog | ${result.title.rendered}`;
         contentContainer.innerHTML += `<div class="details_container">
