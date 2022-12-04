@@ -18,7 +18,7 @@ async function getContent() {
 
         setTimeout(function() {
             loading.classList.remove("spinner");
-        }, 3000);
+        }, 2000);
         
         const addArticle = (article) => {
             return`<div class="post_container">
@@ -43,7 +43,6 @@ async function getContent() {
             startindex = startindex + limit
             endindex = endindex + limit
             const articlesToAdd = results.slice(startindex, endindex)
-            // add setTimeoute and add spinner here
             articlesToAdd.forEach((article) => {
                 postsContainer.innerHTML += addArticle(article);
             })      

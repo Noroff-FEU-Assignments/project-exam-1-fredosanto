@@ -31,13 +31,6 @@ h1 {
     object-fit: cover;
 }
 
-.post-info {
-    /* height: 100%; */
-    /* background-color: yellow; */
-    /* max-height: 400px; */
-    /* max-height: 100px; */
-}
-
 .post-info h2 {
     /* font-size: 1.5rem; */
     font-size: 1.5vw;
@@ -51,12 +44,12 @@ h1 {
 
 /* Loading */
 .spinner {
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid #3498db; 
+    border: 30px solid #000000; 
+    border-top: 30px solid #867FA0; 
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
     margin: auto;
 }
 @keyframes spin {
