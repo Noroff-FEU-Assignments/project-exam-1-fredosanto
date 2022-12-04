@@ -186,8 +186,10 @@ footer {
     padding: 0px;
 }
 
-.footer ul h3 {
+.footer ul h4 {
     margin: 0;
+    text-decoration: underline;
+    font-weight: 800;
 }
 
 .footer ul li {
@@ -196,6 +198,9 @@ footer {
 
 .footer ul li a {
     color: #ffffff;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
 }
 
 .logo-footer_container {
