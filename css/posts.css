@@ -34,12 +34,14 @@ h1 {
 .post-info h2 {
     /* font-size: 1.5rem; */
     font-size: 1.5vw;
-    padding: 10px;
-    margin: 10px auto;
+    padding: 5px;
+    margin: auto;
     text-align: center;
 }
 .post-info p {
     font-size: 1rem;
+    text-align: left;
+    padding: 0 10px;
 }
 
 /* Loading */
