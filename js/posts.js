@@ -1,5 +1,8 @@
+import { tryCatchMessage } from "./utils/tryCatchMessage.js"
+
 const postsContainer = document.querySelector(".posts_container");
 const showMoreBtn = document.querySelector(".show-more")
+const loading = document.querySelector(".loader")
 
 const url = "https://fredo.one/nocreaseblog/wp-json/wp/v2/posts?per_page=100&_embed";
 
@@ -12,6 +15,10 @@ async function getContent() {
         const limit = 10
         let startindex = 0
         let endindex = limit
+
+        setTimeout(function() {
+            loading.classList.remove("spinner");
+        }, 3000);
         
         const addArticle = (article) => {
             return`<div class="post_container">
@@ -49,6 +56,7 @@ async function getContent() {
 
     catch(error) {
         console.log(error);
+        tryCatchMessage("error", error, ".posts_container");
     }
 };
 
