@@ -6,6 +6,8 @@ A school project exam at Noroff were the task was to make a blog using all skill
 
 Link to website:
 
+https://fredo.one/nocreaseblog
+
 ## Description
 
 The project brief was to create a blog site. We had to choose the design and the topic for the blog and the website had to include the following pages:
